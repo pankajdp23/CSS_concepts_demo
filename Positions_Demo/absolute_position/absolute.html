@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="absolute.css" />
+  </head>
+  <body>
+    <div id="div-1">1</div>
+    <div id="container">
+      <div id="div-2">2</div>
+    </div>
+    <div id="div-3">3</div>
+  </body>
+</html>
+
+<!-- # Position:absolute
+Reference: https://blog.hubspot.com/website/css-position
+https://www.scaler.com/topics/css/position-property-in-css/
+
+With position: absolute, an element ignores the normal document flow. 
+However, instead of being positioned relative to the viewport (like with position: fixed), 
+it’s positioned relative to the nearest positioned ancestor 
+(a positioned ancestor is any element with a position value besides static, the default).
+
+Here, div 2 is placed inside a container div (in gray) and positioned relative to the container, 
+since the container is the nearest ancestor element of div 2.
+If there’s no positioned ancestor, the element is positioned relative to the containing block and 
+moves with scrolling.
+ -->
